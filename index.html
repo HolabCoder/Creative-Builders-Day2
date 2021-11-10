@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta name="viewport" content
+        ="width=device-width, initial-scale=1">
+      
+    <title>
+        Changes Background color of a div
+    </title>
+	<style>
+	
+	body {background-color: powderblue;}
+	.edi{
+	padding-top:3px;
+	text-align:center;
+	}
+	.eda{
+	
+	border:1px;
+	background-color:black;
+	width:200px;
+	height:30px;
+	color:white;
+	}
+	.contain{
+	padding-top:200px;
+	padding-left:570px;
+	}
+	.bik{
+	padding-top:7px;
+	padding-left:10px;
+	}
+	</style>
+	<script>
+	function myfunction(){
+	var randomColor = Math.floor(Math.random()*16777215).toString(16);
+	document.getElementById("demo").style.backgroundColor = '#' + randomColor;
+	}
+	
+
+	</script>
+	
+	 
+</head>
+  <body id ="demo">
+  <div class="contain">
+  <div class="eda">
+  <h4 class="bik" > Background Color: powder blue </h4>
+  </div>
+  </div>
+ 
+  <br>
+ <div class="edi"> <input type="button"  value="Change Background Color" onclick="myfunction()" ></div>
+  </body>
+  </html>
